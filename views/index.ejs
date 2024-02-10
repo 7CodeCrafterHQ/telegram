@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css' rel='stylesheet' />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <style>
+    .header {
+      &.button {
+        transition: all 1.7s cubic-bezier(0.23, 1, 0.320, 1);
+
+      }
+
+      input {
+        transition: all 1.7s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+    }
+
+    .back {
+      display: none;
+    }
+
+    .header:has(input:focus) button {
+      rotate: 360deg;
+    }
+
+    .header:has(input:focus) button .back {
+      display: initial;
+    }
+
+    .header:has(input:focus) button .menu {
+      display: none;
+    }
+
+    .header:has(input:focus) input {
+      border-color: var(--theme);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <header class="header z-10 sticky bg-[--primaryBackground] top-0 mb-[0.5rem] flex justify-between px-[0.6rem] gap-4 py-[0.5rem] items-center">
+      <div class="left">
+        <button class="menuActoin text-[1.2rem]">
+          <i class="menu ri-menu-line"></i>
+          <i class="back ri-arrow-left-line"></i>
+        </button>
+      </div>
+      <div class="right w-full">
+        <input placeholder="Search" type="text" class="bg-stone-900 rounded-[1.5rem] w-full border-slate-400  border outline-none px-[1rem] py-[0.5rem]">
+      </div>
+    </header>
+    <div class="chats w-full ">
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+      <div class="chat flex gap-3 px-2 py-1">
+        <div class="left h-[3rem] w-[3rem]">
+          <img class="h-full w-full rounded-[50%] object-cover" src="https://images.pexels.com/photos/7322289/pexels-photo-7322289.jpeg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="text-s">Harley</h3>
+          <p class="opacity-50 text-xs">new user joined</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
